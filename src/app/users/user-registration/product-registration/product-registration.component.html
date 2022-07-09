@@ -1,0 +1,73 @@
+<article>
+<mat-form-field appearance="fill">
+    <mat-label>Product Type</mat-label>
+    <mat-select (selectionChange)="onProductTypeChange($event)" matNativeControl>
+        <mat-option value="car">Car</mat-option>
+        <mat-option value="tech">Tech</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<form (ngSubmit)="onCarFormSubmit(form.value)" #form="ngForm" *ngIf="carFormShow">
+    <div class="form-group">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Mark</mat-label>
+            <input required ngModel name="mark" matInput placeholder="Enter here">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Model</mat-label>
+            <input required ngModel name="model" matInput placeholder="Enter here">
+        </mat-form-field>
+    </div>
+   <div class="form-group">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label></mat-label>
+        <input type="number" required ngModel name="year" matInput placeholder="Enter here">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>VinCode</mat-label>
+        <input required ngModel name="vincode" matInput placeholder="Enter here">
+    </mat-form-field>
+   </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Run</mat-label>
+        <input type="number" required ngModel name="run" matInput placeholder="Enter here">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Gas Type</mat-label>
+        <input required ngModel name="gasType" matInput placeholder="Enter here">
+    </mat-form-field>
+  </div>
+    <div class="button-group">
+    <button (click)="onCancelBtnClick()" class="mb-3" mat-raised-button color="warn">Cancel</button>
+    <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Submit</button>
+    </div>
+</form>
+
+<form (ngSubmit)="onTechFormSubmit(form.value)" #form="ngForm" *ngIf="techFormShow">
+   <div class="form-group">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Brand</mat-label>
+        <input required ngModel name="brand" matInput placeholder="Enter here">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Model</mat-label>
+        <input required ngModel name="model" matInput placeholder="Enter here">
+    </mat-form-field>
+   </div>
+   <div class="form-group">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Year</mat-label>
+        <input type="number" required ngModel name="year" matInput placeholder="Enter here">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Previous Price</mat-label>
+        <input type="number" required ngModel name="prePrice" matInput placeholder="Enter here">
+    </mat-form-field>
+    </div>
+   <div class="button-group">
+    <button (click)="onCancelBtnClick()" class="mb-3" mat-raised-button color="warn">Cancel</button>
+    <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Submit</button>
+   </div>
+</form>
+</article>

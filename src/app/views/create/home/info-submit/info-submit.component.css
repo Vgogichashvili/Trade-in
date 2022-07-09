@@ -1,0 +1,35 @@
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #2a48f5; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+
+.button-group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+button{
+	width: 10%;
+	margin: 2%;
+}

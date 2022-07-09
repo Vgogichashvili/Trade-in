@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Montserrat:wght@300;500&family=Roboto+Condensed:ital@1&display=swap";
+ 
+button {
+	 font-size: medium;
+	 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+	 font-family: 'Roboto Condensed', sans-serif;
+	 width: 18%;
+	 margin-right: -2%;
+}
+ p {
+	 font-size: medium;
+	 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+	 font-family: 'Roboto Condensed', sans-serif;
+}
+ mat-form-field {
+	 font-size: medium;
+	 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+	 font-family: 'Roboto Condensed', sans-serif;
+	 width: 100%;
+	 margin: 2%;
+}
+ article {
+	 display: flex;
+	 justify-content: center;
+	 margin-top: 8%;
+}
+ h1 {
+	 text-align: center;
+	 margin-bottom: 5%;
+	 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+	 font-family: 'Roboto Condensed', sans-serif;
+}
+ .button-group {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+}
+ a {
+	 font-size: medium;
+	 text-decoration: none;
+	 margin-left: 2%;
+}
+ 

@@ -1,0 +1,71 @@
+<article>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Full Name</th>
+                <td>{{user.fullname}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table *ngIf="product.productType == 'car'" class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Brand</th>
+                <td>{{product.mark}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Model</th>
+                <td>{{product.model}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Year</th>
+                <td>{{product.year}}</td>
+            </tr>
+            <tr>
+                <th scope="row">VinCode</th>
+                <td>{{product.vincode}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Run</th>
+                <td>{{product.run}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Gas Type</th>
+                <td>{{product.gasType}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table *ngIf="product.productType == 'tech'" class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Brand</th>
+                <td>{{product.brand}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Model</th>
+                <td>{{product.model}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Year</th>
+                <td>{{product.year}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Previous Price</th>
+                <td>{{product.prePrice}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+    <div class="button-group">
+        <button (click)="onCancelBtnClick()" mat-raised-button color="warn">Cancel</button>
+        <button (click)="onFullTradeInDataSubmit()" mat-raised-button color="primary">Submit</button>
+    </div>
+</article>
